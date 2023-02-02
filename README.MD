@@ -15,3 +15,7 @@ vim /opt/tljh/hub/lib/python3.6/site-packages/tljh/jupyterhub_config.py
 c.JupyterHub.authenticator_class = 'dummyauthenticator.DummyAuthenticator'
 ```
 
+Restart Service
+```
+systemctl restart jupyterhub.service
+```
