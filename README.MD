@@ -1,5 +1,8 @@
 ## Installation ##
-
+Install python requests module
+```
+/opt/tljh/hub/bin/pip3 install requests
+```
 ```
 cd /opt/tljh/hub/lib/python3.6/site-packages
 git clone https://github.coma/revotechuet/dummyauthenticator
