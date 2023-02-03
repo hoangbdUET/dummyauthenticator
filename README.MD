@@ -5,7 +5,7 @@ Install python requests module
 ```
 ```
 cd /opt/tljh/hub/lib/python3.6/site-packages
-git clone https://github.coma/revotechuet/dummyauthenticator
+git clone https://github.com/revotechuet/dummyauthenticator
 ```
 
 Should install it. It has no additional dependencies beyond JupyterHub.
@@ -16,6 +16,7 @@ your `jupyterhub_config.py`:
 ```
 vim /opt/tljh/hub/lib/python3.6/site-packages/tljh/jupyterhub_config.py
 c.JupyterHub.authenticator_class = 'dummyauthenticator.DummyAuthenticator'
+c.DummyAuthenticator.password = "11111111"
 ```
 
 Restart Service
