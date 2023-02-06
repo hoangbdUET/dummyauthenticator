@@ -23,3 +23,8 @@ Restart Service
 ```
 systemctl restart jupyterhub.service
 ```
+Custom spawner default url
+```
+vim /opt/tljh/config/app.py
+c.Spawner.default_url = "/lab"
+```
