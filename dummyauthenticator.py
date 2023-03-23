@@ -33,7 +33,7 @@ class DummyAuthenticator(Authenticator):
                 "username": username,
                 "password": password
             }
-            url = 'https://users.i2g.cloud' + '/login'
+            url = 'https://api.agsolutions.com.vn' + '/login'
             r = requests.post(url, json = payload, verify=False, headers = {'Service': 'WI_AUTH'})
             return r.json()
         if self.password:
